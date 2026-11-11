@@ -1,0 +1,103 @@
+/* Base Layout */
+.dashboard-container {
+  padding: 2rem;
+  background-color: #0f172a; /* Dark slate background */
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #f8fafc;
+}
+
+.dashboard-welcome {
+  color: #94a3b8; /* Slate-400 */
+  font-size: 1.1rem;
+}
+
+.user-name {
+  color: #38bdf8; /* Light blue accent */
+  font-weight: 500;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  gap: 1.5rem;
+  /* Default: 1 column for mobile */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  }
+}
+
+/* Card Styling (Glassmorphism) */
+.stat-card {
+  background: rgba(30, 41, 59, 0.7); /* Semi-transparent slate-800 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(71, 85, 105, 0.5); /* Subtle slate border */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+.stat-label {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Stat Colors */
+.text-blue {
+  color: #60a5fa;
+  text-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.text-emerald {
+  color: #34d399;
+  text-shadow: 0 0 15px rgba(52, 211, 153, 0.3);
+}
+
+.text-purple {
+  color: #c084fc;
+  text-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
+}
+
+.text-amber {
+  color: #fbbf24;
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+}

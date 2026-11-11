@@ -1,0 +1,96 @@
+/* Layout Container */
+.driver-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #0f172a; /* Slate-900 */
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.driver-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.driver-subtitle {
+  color: #cbd5e1; /* text-slate-300 */
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Info Card */
+.status-card {
+  background-color: rgba(30, 41, 59, 0.8); /* bg-slate-800/80 */
+  backdrop-filter: blur(12px); /* backdrop-blur-md */
+  padding: 2rem; /* p-8 */
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid #334155; /* border-slate-700 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  max-width: 42rem; /* max-w-2xl */
+}
+
+.card-heading {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #60a5fa; /* text-blue-400 */
+}
+
+.card-description {
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Buttons Layout */
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+}
+
+/* Start Button */
+.btn-start {
+  background-color: #059669; /* bg-emerald-600 */
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-start:hover {
+  background-color: #10b981; /* hover:bg-emerald-500 */
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3); /* custom emerald shadow */
+  transform: translateY(-1px);
+}
+
+/* End Button */
+.btn-end {
+  background-color: #e11d48; /* bg-rose-600 */
+  color: white;
+}
+
+.btn-end:hover:not(:disabled) {
+  background-color: #f43f5e; /* hover:bg-rose-500 */
+  box-shadow: 0 10px 15px -3px rgba(244, 63, 94, 0.3);
+}
+
+/* Disabled State */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}

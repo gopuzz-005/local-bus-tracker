@@ -1,0 +1,183 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.auth-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75); /* Modern dark backdrop */
+  backdrop-filter: blur(4px);
+}
+
+.auth-card.admin-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.25rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-top: 5px solid #2563eb;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-badge-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.auth-header p {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.auth-alert.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.65rem 2.5rem 0.65rem 2.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password-btn:hover {
+  color: #475569;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 0.5rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #e2e8f0;
+  z-index: -1;
+}
+
+.highlight-link {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.back-link {
+  color: #64748b;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.back-link:hover, .highlight-link:hover {
+  text-decoration: underline;
+}
